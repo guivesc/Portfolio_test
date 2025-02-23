@@ -8,24 +8,35 @@
 </head>
 <body>
 
-    <!-- Section d'introduction -->
-    <header class="hero">
+    <!-- Barre de navigation -->
+    <nav>
+        <div class="navbar">
+            <a href="#about">À propos</a>
+            <a href="#skills">Compétences</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Section "Hero" avec image centrée -->
+    <section class="hero">
         <div class="hero-content">
+            <img src="images/ton-image.jpg" alt="Mon portrait" class="hero-image">
             <h1>Nom Prénom</h1>
             <p>Développeur Web & Designer</p>
         </div>
-    </header>
+    </section>
 
     <!-- Section "À propos de moi" -->
-    <section class="about">
+    <section id="about" class="about">
         <div class="content">
             <h2>À propos de moi</h2>
-            <p>Je suis passionné par le développement web, l'UX/UI design et l'architecture numérique. Mon objectif est de créer des expériences utilisateurs intuitives et visuellement attrayantes.</p>
+            <p>Je suis passionné par le développement web et l'UX/UI design. Mon objectif est de créer des expériences utilisateur intuitives et visuellement attrayantes.</p>
         </div>
     </section>
 
     <!-- Section "Compétences" -->
-    <section class="skills">
+    <section id="skills" class="skills">
         <div class="content">
             <h2>Compétences</h2>
             <ul>
@@ -38,15 +49,17 @@
     </section>
 
     <!-- Section "Projets" -->
-    <section class="projects">
+    <section id="projects" class="projects">
         <div class="content">
             <h2>Projets</h2>
             <div class="project">
+                <img src="images/projet1.jpg" alt="Projet 1" class="project-image">
                 <h3>Projet 1 - Application Web</h3>
                 <p>Un projet de gestion de tâches avec des fonctionnalités de drag & drop.</p>
                 <a href="https://github.com/ton-utilisateur/projet1" target="_blank">Voir sur GitHub</a>
             </div>
             <div class="project">
+                <img src="images/projet2.jpg" alt="Projet 2" class="project-image">
                 <h3>Projet 2 - Portfolio Personnel</h3>
                 <p>Un portfolio personnel pour mettre en avant mes compétences et projets.</p>
                 <a href="https://ton-utilisateur.github.io/portfolio" target="_blank">Voir la démo</a>
@@ -55,7 +68,7 @@
     </section>
 
     <!-- Section "Contact" -->
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="content">
             <h2>Contact</h2>
             <p>Vous pouvez me contacter par email ou me suivre sur les réseaux sociaux.</p>
