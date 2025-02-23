@@ -3,50 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV</title>
+    <title>Mon CV/Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Nom Prénom</h1>
-        <p>Développeur Web</p>
-        <img src="images/photo-profil.jpeg" alt="Photo de Profil" class="photo-profil">
+    <!-- Section d'introduction -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Nom Prénom</h1>
+            <p>Développeur Web & Designer</p>
+        </div>
     </header>
 
-    <section>
-        <h2>À propos de moi</h2>
-        <p>Passionné par le développement web, je me spécialise dans...</p>
+    <!-- Section "À propos de moi" -->
+    <section class="about">
+        <div class="content">
+            <h2>À propos de moi</h2>
+            <p>Je suis passionné par le développement web, l'UX/UI design et l'architecture numérique. Mon objectif est de créer des expériences utilisateurs intuitives et visuellement attrayantes.</p>
+        </div>
     </section>
 
-    <section>
-        <h2>Compétences</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React, Node.js, Express</li>
-            <li>Git, GitHub, Agile</li>
-        </ul>
+    <!-- Section "Compétences" -->
+    <section class="skills">
+        <div class="content">
+            <h2>Compétences</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Node.js</li>
+                <li>Design UX/UI</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </div>
     </section>
 
-    <section>
-        <h2>Expérience professionnelle</h2>
-        <ul>
-            <li><strong>Développeur chez Entreprise A</strong> - 2021-2023</li>
-            <li><strong>Stagiaire chez Entreprise B</strong> - 2020-2021</li>
-        </ul>
+    <!-- Section "Projets" -->
+    <section class="projects">
+        <div class="content">
+            <h2>Projets</h2>
+            <div class="project">
+                <h3>Projet 1 - Application Web</h3>
+                <p>Un projet de gestion de tâches avec des fonctionnalités de drag & drop.</p>
+                <a href="https://github.com/ton-utilisateur/projet1" target="_blank">Voir sur GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Projet 2 - Portfolio Personnel</h3>
+                <p>Un portfolio personnel pour mettre en avant mes compétences et projets.</p>
+                <a href="https://ton-utilisateur.github.io/portfolio" target="_blank">Voir la démo</a>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Projets</h2>
-        <ul>
-            <li><a href="project1.html">Nom du Projet 1</a> - Description du projet</li>
-            <li><a href="project2.html">Nom du Projet 2</a> - Description du projet</li>
-        </ul>
+    <!-- Section "Contact" -->
+    <section class="contact">
+        <div class="content">
+            <h2>Contact</h2>
+            <p>Vous pouvez me contacter par email ou me suivre sur les réseaux sociaux.</p>
+            <ul>
+                <li><a href="mailto:email@example.com">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/ton-profil" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/ton-utilisateur" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>Contactez-moi via <a href="mailto:email@example.com">email@example.com</a></p>
-        <p>Retrouvez-moi sur <a href="https://linkedin.com/in/tonprofil">LinkedIn</a></p>
+        <p>&copy; 2025 Mon CV/Portfolio. Tous droits réservés.</p>
     </footer>
 
 </body>
