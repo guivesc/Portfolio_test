@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,41 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1>Contactez-moi</h1>
-        <p>Vous pouvez me contacter en remplissant le formulaire ci-dessous ou en me suivant sur les réseaux sociaux.</p>
+        <div class="logo"> 
+            <img src="images/logo.jpeg" alt="Logo"> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="contact-form">
-        <h2>Formulaire de contact</h2>
-        <form action="mailto:email@example.com" method="POST" enctype="text/plain">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required>
+    <section class="contact">
+        <h1>Contact Me</h1>
+        <p>Feel free to reach out via email or follow me on social media.</p>
 
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Envoyer</button>
-        </form>
+        <div class="contact-icons">
+            <a href="mailto:your.email@example.com">
+                <img src="images/email-icon.png" alt="Email">
+            </a>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                <img src="images/linkedin-icon.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">
+                <img src="images/instagram-icon.png" alt="Instagram">
+            </a>
+        </div>
     </section>
-
-    <section class="social-media">
-        <h2>Suivez-moi</h2>
-        <p>Vous pouvez me retrouver sur :</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/ton-profil" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/ton-utilisateur" target="_blank">GitHub</a></li>
-            <li><a href="https://twitter.com/ton-utilisateur" target="_blank">Twitter</a></li>
-        </ul>
-    </section>
-
-    <footer>
-        <p><a href="index.html">Retour à la page d'accueil</a></p>
-    </footer>
-
 </body>
 </html>
