@@ -83,7 +83,7 @@ nav a {
 
 /* Project images */
 .gallery img {
-    width: 300px; /* Sets image width */
+    width: 400px; /* Sets image width */
     height: auto; /* Maintains aspect ratio */
     border-radius: 8px; /* Rounds the corners */
     transition: 0.3s; /* Smooth hover effect */
