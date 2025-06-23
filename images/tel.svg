@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 100 125"
+   id="svg2"
+   sodipodi:docname="tel.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="6.448"
+     inkscape:cx="49.937965"
+     inkscape:cy="68.858561"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <g
+     transform="translate(0,-952.36218)"
+     id="g1"
+     style="fill:#b3b3b3">
+    <path
+       style="opacity:1;color:#000000;fill:#b3b3b3;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;fill-opacity:1"
+       d="m 25.999582,965.36259 c -1.969755,0.0429 -2.821846,0.65354 -4,2 l -7,8 c -1.463126,1.67214 -2,4.27957 -2,7 0,9.08295 6.8331,23.83061 20,37.00001 13.169385,13.1669 27.916954,19.9999 37,20 2.720389,0 5.327799,-0.5368 7,-2 l 8,-7 c 1.34641,-1.1782 1.95695,-2.0303 2,-4 0.03147,-1.4506 -0.828334,-2.8283 -2,-4 l -11,-11 c -1.234544,-1.2345 -2.295435,-2.0001 -4,-2 -1.772911,-1e-4 -2.907574,0.9076 -4,2 l -4,4 c -1.83237,1.7649 -3.200868,1.8994 -5,1 l -21,-21.00001 c -0.89939,-1.79912 -0.764883,-3.16762 1,-5 l 4,-4 c 1.092413,-1.09241 2,-2.22711 2,-4 0,-1.70466 -0.765438,-2.76544 -2,-4 l -11,-11 c -1.171671,-1.17167 -2.549473,-2.03156 -4,-2 z"
+       id="path1" />
+  </g>
+</svg>

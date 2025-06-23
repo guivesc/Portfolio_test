@@ -64,31 +64,36 @@ nav a {
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap; /* Ensures images wrap to the next line if needed */
-    gap: 0.5cm; /* Keeps consistent vertical spacing between images */
-    justify-content: space-between; /* Ensures images fill available space */
-    width: 100%; /* Makes gallery take up full width */
-    max-width: calc(100% - 0cm); /* Ensures it fits inside the 2cm borders */
-    margin: 0 auto; /* Centers the gallery within the section */
-    padding: 10px 20px; /* Adds internal spacing */
-    background-color: #f6f6f6; /* Light gray background */
+    column-count: 2;
+    column-gap: 1cm;
+    padding: 10px 20px;
+    background-color: #f6f6f6;
+    width: 100%;
+    margin: 0 auto;
 }
 
-
-.gallery .project {
+.project {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1cm;
+    break-inside: avoid;
     position: relative;
     overflow: hidden;
 }
 
-/* Project images */
+
 .gallery img {
-    width: 400px; /* Sets image width */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 8px; /* Rounds the corners */
-    transition: 0.3s; /* Smooth hover effect */
-    filter: grayscale(100%); /* Converts images to black and white */
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: 0.3s;
+    filter: grayscale(100%);
+    object-fit: cover;
 }
+
+
+
 
 
 /* Project title text */
