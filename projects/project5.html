@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K99EKT0FQX"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K99EKT0FQX');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 5 – Montmello</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Garamond, serif;
+            background-color: black;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f6f6f6;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+
+        .logo img {
+            height: 80px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #8c8c8c;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: calc(100vh - 100px); /* account for header */
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        .project-title {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 15px 0;
+        }
+
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 48px;
+            color: white;
+            background: rgba(0, 0, 0, 0.3);
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            z-index: 10;
+        }
+
+        .nav-arrow:hover {
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo"> <img src="../images/logo.png" alt="Logo"> </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html">ACCUEIL</a></li>
+            <li><a href="../art.html">GALERIE D'ART</a></li>
+            <li><a href="../contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="slideshow-container">
+    <img src="../images/P5/slide3.png" class="slide active" alt="Slide 3">
+    <img src="../images/P5/slide4.png" class="slide" alt="Slide 4">
+    <img src="../images/P5/slide5.png" class="slide" alt="Slide 5">
+    <img src="../images/P5/slide6.png" class="slide" alt="Slide 6">
+    <img src="../images/P5/slide7.png" class="slide" alt="Slide 7">
+
+    <div class="project-title">Montmello</div>
+
+    <button class="nav-arrow prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="nav-arrow next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+
+<script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+    }
+
+    function changeSlide(direction) {
+        slideIndex = (slideIndex + direction + slides.length) % slides.length;
+        showSlide(slideIndex);
+    }
+</script>
+
+</body>
+</html>
