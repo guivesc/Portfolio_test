@@ -81,6 +81,15 @@ nav a {
     overflow: hidden;
 }
 
+.gif {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1cm;
+    break-inside: avoid;
+    position: relative;
+    overflow: hidden;
+}
+
 
 .gallery img {
     width: 100%;
@@ -134,6 +143,15 @@ nav a {
 
 
 
+.gif:hover img {
+    transform: scale(1.05); /* Slightly enlarges image on hover */
+    filter: grayscale(0%); /* Restores color when hovered */
+}
+.gif:hover .overlay {
+    opacity: 1; /* Make the title visible */
+}
+
+
 /* ABOUT */ 
 
 .about {
@@ -185,6 +203,6 @@ nav a {
 }
 
 .highlight {
-  color: #000000; /* pink */
+  color: #000000; 
   font-weight: bold;
 }
