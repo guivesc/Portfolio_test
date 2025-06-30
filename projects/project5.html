@@ -22,11 +22,13 @@
 </header>
 
 <div class="slideshow-container">
-    <img src="../images/P5/slide3.png" class="slide active" alt="Slide 3">
+    <img src="../images/P5/montmello.gif" class="slide active" alt="Slide Gif">
+    <img src="../images/P5/slide3.png" class="slide" alt="Slide 3">
     <img src="../images/P5/slide4.png" class="slide" alt="Slide 4">
     <img src="../images/P5/slide5.png" class="slide" alt="Slide 5">
     <img src="../images/P5/slide6.png" class="slide" alt="Slide 6">
     <img src="../images/P5/slide7.png" class="slide" alt="Slide 7">
+    
 
     <div class="project-title">Montmello</div>
 
@@ -37,16 +39,30 @@
 <script>
     let slideIndex = 0;
     const slides = document.querySelectorAll('.slide');
+    const projectTitle = document.querySelector('.project-title');
+
+    const titles = [
+        "Introduction to Project",       // for slide1.jpg
+        "Objectives and Scope",          // for slide2.jpg
+        "Research Methodology",          // for slide3.jpg
+        "Data Collection",               // for slide4.jpg
+        "GIS Mapping",                   // for slide5.png
+        "Analysis Tools",                // for slide6.png
+    ];
 
     function showSlide(index) {
         slides.forEach(slide => slide.classList.remove('active'));
         slides[index].classList.add('active');
+        projectTitle.textContent = titles[index] || "Montmello";  // fallback
     }
 
     function changeSlide(direction) {
         slideIndex = (slideIndex + direction + slides.length) % slides.length;
         showSlide(slideIndex);
     }
+
+    // Show first slide and title on load
+    showSlide(slideIndex);
 </script>
 
 </body>

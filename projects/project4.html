@@ -35,16 +35,27 @@
 <script>
     let slideIndex = 0;
     const slides = document.querySelectorAll('.slide');
+    const projectTitle = document.querySelector('.project-title');
+
+    const titles = [
+        "Introduction to Project",       // for slide1.jpg
+        "Objectives and Scope",          // for slide2.jpg
+        "Research Methodology",          // for slide3.jpg
+    ];
 
     function showSlide(index) {
         slides.forEach(slide => slide.classList.remove('active'));
         slides[index].classList.add('active');
+        projectTitle.textContent = titles[index] || "Renouvellement Urbain Cais do Porto";  // fallback
     }
 
     function changeSlide(direction) {
         slideIndex = (slideIndex + direction + slides.length) % slides.length;
         showSlide(slideIndex);
     }
+
+    // Show first slide and title on load
+    showSlide(slideIndex);
 </script>
 
 </body>

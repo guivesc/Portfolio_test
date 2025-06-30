@@ -33,24 +33,10 @@
     <img src="../images/P2/slide9.png" class="slide" alt="Slide 9">
     <img src="../images/P2/slide10.png" class="slide" alt="Slide 10">
     <img src="../images/P2/slide11.png" class="slide" alt="Slide 11">
-    <img src="../images/P2/slide12.png" class="slide" alt="Slide 12">
     <img src="../images/P2/slide13.png" class="slide" alt="Slide 13">
     <img src="../images/P2/slide14.png" class="slide" alt="Slide 14">
     <img src="../images/P2/slide15.png" class="slide" alt="Slide 15">
-    <img src="../images/P2/slide16.png" class="slide" alt="Slide 16">
-    <img src="../images/P2/slide17.png" class="slide" alt="Slide 17">
-    <img src="../images/P2/slide18.png" class="slide" alt="Slide 18">
-    <img src="../images/P2/slide19.png" class="slide" alt="Slide 19">
-    <img src="../images/P2/slide20.png" class="slide" alt="Slide 20">
-    <img src="../images/P2/slide21.png" class="slide" alt="Slide 21">
-    <img src="../images/P2/slide22.png" class="slide" alt="Slide 22">
-    <img src="../images/P2/slide23.png" class="slide" alt="Slide 23">
-    <img src="../images/P2/slide24.png" class="slide" alt="Slide 24">
-    <img src="../images/P2/slide25.png" class="slide" alt="Slide 25">
-    <img src="../images/P2/slide26.png" class="slide" alt="Slide 26">
-    <img src="../images/P2/slide27.png" class="slide" alt="Slide 27">
-    <img src="../images/P2/slide28.png" class="slide" alt="Slide 28">
-    <img src="../images/P2/slide29.png" class="slide" alt="Slide 29">
+    <img src="../images/P2/slide12.png" class="slide" alt="Slide 12">
     <img src="../images/P2/montage.gif" class="slide" alt="Slide gif">
 
 
@@ -63,16 +49,40 @@
 <script>
     let slideIndex = 0;
     const slides = document.querySelectorAll('.slide');
+    const projectTitle = document.querySelector('.project-title');
+
+    const titles = [
+        "Introduction to Project",       // for slide1.jpg
+        "Objectives and Scope",          // for slide2.jpg
+        "Research Methodology",          // for slide3.jpg
+        "Data Collection",               // for slide4.jpg
+        "GIS Mapping",                   // for slide5.png
+        "Analysis Tools",                // for slide6.png
+        "Key Findings",                  // for slide7.png
+        "Challenges",                    // for slide8.png
+        "Solutions Proposed",            // for slide9.png
+        "Slide 10",                      // for slide10.png
+        "Future Work",                   // for slide11.png
+        "Conclusion",                    // for slide12.png
+        "References and Credits",         // for slide13.png
+        "References and Credits2",         // for slide14.png
+        "References and Credits3",         // for slide15.png
+        "References and Credits4",         // for slide16.png
+    ];
 
     function showSlide(index) {
         slides.forEach(slide => slide.classList.remove('active'));
         slides[index].classList.add('active');
+        projectTitle.textContent = titles[index] || "Habitation Ponta da Figueira Marina";  // fallback
     }
 
     function changeSlide(direction) {
         slideIndex = (slideIndex + direction + slides.length) % slides.length;
         showSlide(slideIndex);
     }
+
+    // Show first slide and title on load
+    showSlide(slideIndex);
 </script>
 
 </body>
