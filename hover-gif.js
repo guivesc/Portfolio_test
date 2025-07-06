@@ -1,14 +1,17 @@
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll('.gif-hover').forEach(img => {
-        const gif = img.getAttribute('data-gif');
-        const staticImg = img.getAttribute('data-static');
+document.addEventListener('DOMContentLoaded', function () {
+    const gifContainers = document.querySelectorAll('.gif');
 
-        img.addEventListener('mouseenter', () => {
-            img.src = gif;
+    gifContainers.forEach(container => {
+        const img = container.querySelector('.gif-hover');
+        const gifSrc = img.getAttribute('data-gif');
+        const staticSrc = img.getAttribute('data-static');
+
+        container.addEventListener('mouseover', () => {
+            img.src = gifSrc;
         });
 
-        img.addEventListener('mouseleave', () => {
-            img.src = staticImg;
+        container.addEventListener('mouseout', () => {
+            img.src = staticSrc;
         });
     });
 });
