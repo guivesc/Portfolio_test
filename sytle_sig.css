@@ -83,13 +83,27 @@ nav a {
     column-count: 2;
     column-gap: 1cm;
     /* padding: 10px 20px; */
+    padding: 1cm 0;
     background-color: #ffffff;
     width: 100%;
     margin: 0 auto;
 }
 
+#URUGUAI .gallerySIG {
+    column-count: 2;
+    column-gap: 1cm;
+    /* padding: 10px 20px; */
+    padding: 1cm 0;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
 .gallerySIG img {
     width: 100%;
+    margin: 0 auto;
     height: auto;
     display: block;
     border-radius: 8px;
@@ -97,6 +111,30 @@ nav a {
     filter: grayscale(100%);
     object-fit: cover;
 }
+
+
+#POA .gallerySIG img {
+    width: 75%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: 0.3s;
+    object-fit: cover;
+}
+
+#URUGUAI .gallerySIG img {
+    width: 85%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: 0.3s;
+    object-fit: cover;
+}
+
+
+
 
 .gallerySIG .overlay {
     position: absolute;
