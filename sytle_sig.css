@@ -108,7 +108,7 @@ nav a {
     display: block;
     border-radius: 8px;
     transition: 0.3s;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     object-fit: cover;
 }
 
@@ -160,11 +160,12 @@ nav a {
     display: block;
 }
 
-.gif:hover img {
+/*.gif:hover img {*/
     /*transform: scale(1.05);*/ /* Slightly enlarges image on hover */
-    filter: grayscale(0%); /* Restores color when hovered */
-}
-.gif:hover .overlay {
-    opacity: 0; /* Make the title visible */
-}
+    /*filter: grayscale(0%);*/ /* Restores color when hovered */
+/*}*/
+
+/*.gif:hover .overlay {*/
+    /*opacity: 0;*/ /* Make the title visible */
+/*}*/
 
