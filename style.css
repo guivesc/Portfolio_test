@@ -83,14 +83,7 @@ nav a {
     overflow: hidden;
 }
 
-.gif {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 1cm;
-    break-inside: avoid;
-    position: relative;
-    overflow: hidden;
-}
+
 
 
 .gallery img {
@@ -144,55 +137,6 @@ nav a {
 }
 
 
-.gallerySIG {
-    column-count: 2;
-    column-gap: 1cm;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    width: 100%;
-    margin: 0 auto;
-}
-.gallerySIG img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-    transition: 0.3s;
-    filter: grayscale(100%);
-    object-fit: cover;
-}
-
-.gallerySIG .overlay {
-    position: absolute;
-    top: 0; /* Aligns the overlay to the top of the image */
-    left: 0; /* Aligns the overlay to the left of the image */
-    width: 100%; /* Makes the overlay cover the full width of the image */
-    height: 100%; /* Makes the overlay cover the full height of the image */
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    color: white;
-    display: flex; /* Enables flexbox for centering */
-    justify-content: center; /* Centers text horizontally */
-    align-items: center; /* Centers text vertically */
-    font-size: 24px;
-    border-radius: 8px; /* Keeps rounded corners like the image */
-    opacity: 1; /* Hides overlay initially */
-    transition: opacity 0.3s ease-in-out; /* Smooth fade effect */
-    text-align: center;
-}
-
-.image-wrapper {
-    position: relative;
-    width: 100%;
-    display: block;
-}
-
-.gif:hover img {
-    /*transform: scale(1.05);*/ /* Slightly enlarges image on hover */
-    filter: grayscale(0%); /* Restores color when hovered */
-}
-.gif:hover .overlay {
-    opacity: 0; /* Make the title visible */
-}
 
 
 /* ABOUT */ 
