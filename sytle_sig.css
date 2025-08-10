@@ -87,9 +87,15 @@ section h2 {
 p {
     text-align: justify;
     margin-bottom: 10px;
-    line-height: 1.6;    
+    line-height: 1.9;    
 }
 
+.cite {
+    display: flex;
+    justify-content: flex-end; /* Aligns menu items to the right */
+    width: 100%;
+    overflow: hidden;
+}
 
 
 
@@ -101,7 +107,9 @@ p {
     break-inside: avoid;
     position: relative;
     overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
+
 
 .gallerySIG {
     column-count: 1;
@@ -155,7 +163,7 @@ p {
 
 
 #POA .gallerySIG img {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
     height: auto;
     display: block;
