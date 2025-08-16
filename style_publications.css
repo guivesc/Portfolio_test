@@ -88,9 +88,44 @@ ul {
     padding-left: 20px;
 }
 
-li {
+#publications li, #book li, #presentation li, #media li, #Projets li {
     text-align: justify;
     margin-bottom: 10px;
     line-height: 1.6;
+}
+
+
+/* ========================= */
+/* Mobile Adaptation Section */
+/* ========================= */
+
+/* Tablets and small laptops */
+@media (max-width: 768px) {
+    body {
+    margin: 10px; /* smaller margin for tablets & phones */
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    main {
+    font-size: 16px;
+    padding: 0 10px;
+    }   
+
+    h2 {
+    font-size: 20px;
+    }
+
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    }
+
+    nav a {
+    padding: 8px;
+    font-size: 16px;
+    }
 }
 
