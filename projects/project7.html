@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 7 – Résidence Loureiro Silva</title>
+    <link rel="stylesheet" href="project_style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo"> <a href="../index.html"><img src="../images/logo.png" alt="Logo"></a> </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html">PROJETS</a></li>
+            <li><a href="../sig.html">SIG</a></li>
+            <li><a href="../publications.html">PUBLICATIONS</a></li>
+            <li><a href="../art.html">TABLEAUX</a></li>
+            <li><a href="../contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="slideshow-container">
+    <img src="../images/P7/slide1.png" class="slide active" alt="Slide 1">
+    <img src="../images/P7/slide2.png" class="slide" alt="Slide 2">
+    <img src="../images/P7/slide3.png" class="slide" alt="Slide 3">
+    <img src="../images/P7/slide4.png" class="slide" alt="Slide 4">
+    <img src="../images/P7/slide5.png" class="slide" alt="Slide 5">
+
+
+    <div class="project-title">Résidence Loureiro Silva</div>
+
+    <button class="nav-arrow prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="nav-arrow next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+
+<script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const projectTitle = document.querySelector('.project-title');
+
+    const titles = [
+        "Plan de niveau 4",
+        "Coupe A",
+        "Coupe B",
+        "Coupe C",
+        "Détail d'élévation",
+    ];
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+        projectTitle.textContent = titles[index] || "Résidence Loureiro Silva";  // fallback
+    }
+
+    function changeSlide(direction) {
+        slideIndex = (slideIndex + direction + slides.length) % slides.length;
+        showSlide(slideIndex);
+    }
+
+    // Show first slide and title on load
+    showSlide(slideIndex);
+</script>
+
+
+</body>
+</html>
