@@ -8,42 +8,65 @@ body {
 }
 
 header {
-    position: relative;
-    width: 100%;
+    position: relative; /* Changes the header to normal document flow */
+    top: auto; /* Resets any previous top positioning */
+    left: auto;
+    right: auto;
+    width: calc(100% - 1cm); /* Keeps the width inside the 2cm borders */
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
     padding: 10px 20px;
-    box-sizing: border-box;
+}
+.logo{
+    margin: 2cm;
 }
 
 .logo img {
     height: 80px;
 }
 
+/* Navigation menu adjustments */
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+    list-style: none; /* Removes bullet points */
+    display: flex; /* Makes menu items appear in a row */
+    gap: 20px; /* Adds spacing between menu items */
     padding: 0;
     margin: 0;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allows menu to wrap on smaller screens */
 }
 
+nav {
+    margin: 2cm;
+    display: flex;
+    justify-content: flex-end; /* Aligns menu items to the right */
+    width: 100%;
+    overflow: hidden;
+}
+
+nav ul li {
+    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+}
+
+/* Menu links in header */
 nav a {
-    text-decoration: none;
-    color: #8c8c8c;
+    text-decoration: none; /* Removes underlines from links */
+    color: #8c8c8c; /* Dark gray text */
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 10px 15px; /* Adds clickable padding */
     display: block;
 }
+
+
+/*  ===================================================  */
+
 
 .slideshow-container {
     position: relative;
     width: 80%;
     margin: 0 auto;
-    height: calc(100vh - 100px); /* account for header */
+    height: calc(50vh - 100px); /* account for header */
     background-color: #ffffff; 
 }
 
@@ -60,7 +83,7 @@ nav a {
 }
 
 .project-title {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -92,4 +115,57 @@ nav a {
 
 .next {
     right: 10px;
+}
+
+/* ========================= */
+/* Mobile Adaptation Section */
+/* ========================= */
+
+
+/* Tablets and small laptops */
+@media (max-width: 768px) {
+    .logo {
+        margin: 10px; 
+    }
+
+    nav{
+        margin: 10px;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+
+    .project-title{
+        font-size: 16px;
+        position: relative;
+        bottom: 0;
+    }
+
+    .slideshow-container {
+        width: 100%;    
+        height: calc(50vh - 100px); /* account for header */
+    }
+
+    .nav-arrow {
+    top: 50%;
+    font-size: 16px;
+    color: white;
+    padding: 5px 10px;
+    }
+
+    .slide {
+    width: 100%;
+    }   
+
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    }
+
+    nav a {
+    padding: 8px;
+    font-size: 16px;
+    }
 }
