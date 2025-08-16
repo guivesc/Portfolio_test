@@ -96,15 +96,6 @@ nav a {
     object-fit: cover;
 }
 
-
-@media (max-width: 768px) {
-    .gallery {
-        column-count: 1;
-    }
-}
-
-
-
 /* Project title text */
 .gallery .overlay {
     position: absolute;
@@ -194,4 +185,45 @@ nav a {
 .highlight {
   color: #000000; 
   font-weight: bold;
+}
+
+
+/* ========================= */
+/* Mobile Adaptation Section */
+/* ========================= */
+
+
+/* Tablets and small laptops */
+@media (max-width: 768px) {
+    body {
+    margin: 10px; /* smaller margin for tablets & phones */
+    }
+
+    .gallery {
+        column-count: 1;
+    }
+}
+
+
+/* Phones */
+@media (max-width: 600px) {
+    /* main {
+    font-size: 16px;
+    padding: 0 10px;
+    }   
+
+    h2 {
+    font-size: 20px;
+    } */
+
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    }
+
+    nav a {
+    padding: 8px;
+    font-size: 16px;
+    }
 }
