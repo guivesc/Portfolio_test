@@ -147,22 +147,22 @@ nav a {
     }
 
     .gallery .project:nth-child(1) {
-    order: 1;
+    order: 3;
     }
     .gallery .project:nth-child(2) {
-    order: 4;
+    order: 5;
     }
     .gallery .project:nth-child(3) {
     order: 6;
     }
     .gallery .project:nth-child(4) {
-    order: 2;
+    order: 1;
     }
     .gallery .project:nth-child(5) {
-    order: 3;
+    order: 2;
     }
     .gallery .project:nth-child(6) {
-    order: 5;
+    order: 4;
     }
     .gallery .project:nth-child(7) {
     order: 7;
